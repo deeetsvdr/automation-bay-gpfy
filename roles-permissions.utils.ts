@@ -531,7 +531,9 @@ async function verifyQje(
     );
     if (exportOptions) {
       if (access.export) {
-        expect(exportOptions.length).toBeGreaterThan(0);
+        expect(dropdownHasOption(exportOptions, 'CSV')).toBe(!!access.exportByCSV);
+        expect(dropdownHasOption(exportOptions, 'PDF')).toBe(!!access.exportByPDF);
+        expect(dropdownHasOption(exportOptions, 'Excel')).toBe(!!access.exportByExcel);
       }
     }
 
@@ -548,7 +550,9 @@ async function verifyQje(
       );
       if (unreviewedExportOptions) {
         if (access.export) {
-          expect(unreviewedExportOptions.length).toBeGreaterThan(0);
+          expect(dropdownHasOption(unreviewedExportOptions, 'CSV')).toBe(!!access.exportByCSV);
+          expect(dropdownHasOption(unreviewedExportOptions, 'PDF')).toBe(!!access.exportByPDF);
+          expect(dropdownHasOption(unreviewedExportOptions, 'Excel')).toBe(!!access.exportByExcel);
         }
       }
     }
@@ -566,7 +570,9 @@ async function verifyQje(
       );
       if (reviewedExportOptions) {
         if (access.export) {
-          expect(reviewedExportOptions.length).toBeGreaterThan(0);
+          expect(dropdownHasOption(reviewedExportOptions, 'CSV')).toBe(!!access.exportByCSV);
+          expect(dropdownHasOption(reviewedExportOptions, 'PDF')).toBe(!!access.exportByPDF);
+          expect(dropdownHasOption(reviewedExportOptions, 'Excel')).toBe(!!access.exportByExcel);
         }
       }
     }
