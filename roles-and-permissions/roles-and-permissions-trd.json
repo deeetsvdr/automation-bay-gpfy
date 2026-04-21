@@ -1,0 +1,940 @@
+{
+  "Close Manager": {
+    "environments": {
+      "dev": {
+        "username": "odette+trd_CloseManager@gappify.com",
+        "password": "GetThingsD0ne"
+      },
+      "qa": {
+        "username": "qacs+4trd_close_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_close_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "uat": {
+        "username": "qacs+trd_close_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_close_manager@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": false,
+          "settings": true,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": false,
+          "edit": true,
+          "createQJE": false,
+          "noQJE": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": false,
+          "userManagementSSO": false,
+          "userManagementLoginAuditTrail": false,
+          "scheduleManager": true,
+          "periodManagement": true,
+          "reviewCenter": true,
+          "transactions": false,
+          "transactionsColumnManager": false,
+          "accrualManager": false,
+          "accrualRules": true,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  },
+  "GappifyAdministrator": {
+    "environments": {
+      "dev": {
+        "username": "honeycombSaniAdmin",
+        "password": "C@nh34ElSs"
+      },
+      "qa": {
+        "username": "qacs+4trd_admin@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_admin@gappify.com",
+        "password": "Pa55w0rd"
+      },
+      "uat": {
+        "username": "qacs+trd_admin@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_admin@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": true,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": true,
+          "settings": true,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": true,
+          "edit": true,
+          "createQJE": true,
+          "noQJE": true,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": true,
+          "userManagementSSO": true,
+          "userManagementLoginAuditTrail": true,
+          "scheduleManager": true,
+          "periodManagement": true,
+          "reviewCenter": true,
+          "transactions": false,
+          "transactionsColumnManager": true,
+          "accrualManager": false,
+          "accrualRules": true,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  },
+  "QJE Manager": {
+    "environments": {
+      "dev": {
+        "username": "odette+trd_qjemanager@gappify.com",
+        "password": "GetThingsD0ne!"
+      },
+      "qa": {
+        "username": "qacs+4trd_qje_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_qje_manager@gappify.com",
+        "password": "Pa55w0rd"
+      },
+      "uat": {
+        "username": "qacs+trd_qje_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_qje_manager@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": false,
+          "settings": false,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": false,
+          "edit": false,
+          "createQJE": false,
+          "noQJE": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": false,
+          "userManagementSSO": false,
+          "userManagementLoginAuditTrail": false,
+          "scheduleManager": false,
+          "periodManagement": false,
+          "reviewCenter": false,
+          "transactions": false,
+          "transactionsColumnManager": true,
+          "accrualManager": false,
+          "accrualRules": false,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  },
+  "Full User": {
+    "environments": {
+      "dev": {
+        "username": "odette+trd_fulluser@gappify.com",
+        "password": "GetThingsD0ne!"
+      },
+      "qa": {
+        "username": "qacs+4trd_full_user@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_full_user@gappify.com",
+        "password": "Pa55w0rd"
+      },
+      "uat": {
+        "username": "qacs+trd_full_user@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_full_user@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": true,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": true,
+          "settings": false,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": true,
+          "edit": false,
+          "createQJE": true,
+          "noQJE": true,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": false,
+          "userManagementSSO": false,
+          "userManagementLoginAuditTrail": false,
+          "scheduleManager": false,
+          "periodManagement": false,
+          "reviewCenter": false,
+          "transactions": false,
+          "transactionsColumnManager": false,
+          "accrualManager": false,
+          "accrualRules": false,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  },
+  "Read-Only User": {
+    "environments": {
+      "dev": {
+        "username": "odette+trd_readonly@gappify.com",
+        "password": "GetThingsD0ne!"
+      },
+      "qa": {
+        "username": "qacs+4trd_read_only@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_read_only@gappify.com",
+        "password": "Pa55w0rd"
+      },
+      "uat": {
+        "username": "qacs+trd_read_only@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_read_only@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": false,
+          "settings": false,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": false,
+          "edit": false,
+          "createQJE": false,
+          "noQJE": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": false,
+          "userManagementSSO": false,
+          "userManagementLoginAuditTrail": false,
+          "scheduleManager": false,
+          "periodManagement": false,
+          "reviewCenter": false,
+          "transactions": false,
+          "transactionsColumnManager": false,
+          "accrualManager": false,
+          "accrualRules": false,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  },
+  "Transaction Manager": {
+    "environments": {
+      "dev": {
+        "username": "odette+trd_transactionmanager@gappify.com",
+        "password": "GetThingsD0ne!"
+      },
+      "qa": {
+        "username": "qacs+4trd_transaction_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_transaction_manager@gappify.com",
+        "password": "Pa55w0rd"
+      },
+      "uat": {
+        "username": "qacs+trd_transaction_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_transaction_manager@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": true,
+          "settings": false,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": true,
+          "edit": false,
+          "createQJE": true,
+          "noQJE": true,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": false,
+          "userManagementSSO": false,
+          "userManagementLoginAuditTrail": false,
+          "scheduleManager": false,
+          "periodManagement": false,
+          "reviewCenter": false,
+          "transactions": false,
+          "transactionsColumnManager": false,
+          "accrualManager": false,
+          "accrualRules": false,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  },
+  "Task Manager": {
+    "environments": {
+      "dev": {
+        "username": "odette+trd_taskmanager@gappify.com",
+        "password": "GetThingsD0ne!"
+      },
+      "qa": {
+        "username": "qacs+4trd_task_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "staging": {
+        "username": "qacs+trd_task_manager@gappify.com",
+        "password": "Pa55w0rd"
+      },
+      "uat": {
+        "username": "qacs+trd_task_manager@gappify.com",
+        "password": "Pa55w0rd!"
+      },
+      "prod": {
+        "username": "qacs+trd_task_manager@gappify.com",
+        "password": "Pa55w0rd"
+      }
+    },
+    "access": {
+      "Review Center": {
+        "name": "Review Center",
+        "functions": {
+          "page": true,
+          "export": true,
+          "exportByExcel": true,
+          "filtering": true,
+          "filteringAll": true,
+          "periodDowndown": true,
+          "viewDowndown": true
+        }
+      },
+      "Accrual Manager": {
+        "name": "Accrual Manager",
+        "functions": {
+          "page": true,
+          "import": true,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByActiveLines": true,
+          "filteringByInactiveLines": true,
+          "filteringByCreateNewFilter": true,
+          "uploadFiles": false,
+          "settings": false,
+          "copy": false,
+          "delete": false,
+          "history": true
+        }
+      },
+      "Transaction Manager": {
+        "name": "Transaction Manager",
+        "functions": {
+          "page": true,
+          "history": true,
+          "attachments": true,
+          "comments": true,
+          "override": false,
+          "addNewLine": false,
+          "edit": false,
+          "createQJE": false,
+          "noQJE": false,
+          "export": true,
+          "exportWithId": true,
+          "exportWithoutId": true,
+          "filtering": true,
+          "filteringByAllLines": true,
+          "filteringByLinesWithAmountGreaterThan0": true,
+          "filteringByRejectedLines": true,
+          "filteringByOverridenLines": true,
+          "filteringByLinesWithError": true,
+          "filteringCreateNewFilter": true,
+          "copy-line": false,
+          "delete-copied-line": false,
+          "inline-editing": false,
+          "line-history": false,
+          "delete-line": false,
+          "quick-search": true,
+          "upload-source-data": false,
+          "upload-imported-accruals": false
+        }
+      },
+      "Settings": {
+        "name": "Settings",
+        "functions": {
+          "page": false,
+          "companySettings": false,
+          "userManagement": false,
+          "userManagementUsers": false,
+          "userManagementSSO": false,
+          "userManagementLoginAuditTrail": false,
+          "scheduleManager": false,
+          "periodManagement": true,
+          "reviewCenter": false,
+          "transactions": false,
+          "transactionsColumnManager": false,
+          "accrualManager": false,
+          "accrualRules": false,
+          "addOnModule": false,
+          "integration": false
+        }
+      },
+      "QJE": {
+        "name": "QJE",
+        "functions": {
+          "pageReviewJE": true,
+          "reviewPOClosure_Unreviewed": true,
+          "reviewPOClosure_Reviewed": true,
+          "periodDowndown": true,
+          "filtering": true,
+          "filteringByAllJEs": true,
+          "filteringByUnpostedJEs": true,
+          "filteringByPostedJEs": true,
+          "filteringByRejectedJEs": true,
+          "filteringByExtractedJEs": true,
+          "filteringByFailedJEs": true,
+          "filteringCreateNewFilter": true,
+          "export": true,
+          "exportByCSV": true,
+          "exportByPDF": true,
+          "exportByExcel": true,
+          "postJE": false,
+          "rejectJE": false,
+          "closePO": true
+        }
+      }
+    }
+  }
+}
